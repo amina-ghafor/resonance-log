@@ -1,5 +1,5 @@
 # One entry per resource. Schema and field notes in docs/one-pager.md.
-# tldr and why are mine to fill: tldr is the lesson, why is the context I was in.
+# tldr is the lesson, why is the context I was in when it resonated.
 
 - title: How to Build AI Workflows with Claude Code
   url: https://www.producttalk.org/how-to-build-ai-workflows-with-claude-code/
@@ -8,8 +8,8 @@
   skill_area: ai-tools
   format: essay
   stage: mid-build
-  tldr: TODO
-  why: TODO
+  tldr: "A non-engineer can build working tools for discovery work with a coding agent by describing the workflow step by step. The skill is decomposing the task, not writing the code."
+  why: "A concrete model for building my own PM tooling rather than waiting on engineering, which is the builder-PM direction I am working towards."
   revisit: true
 
 - title: A Practical Guide to AI Evals
@@ -19,8 +19,8 @@
   skill_area: ai-evals
   format: essay
   stage: foundational
-  tldr: TODO
-  why: TODO
+  tldr: "Judge an LLM feature's quality with a written eval set and a measured pass rate, not by feel, and iterate the prompt against that benchmark."
+  why: "Evals are the clearest AI-lifecycle skill for the roles I want, and very few PMs can show the practice."
   revisit: true
 
 - title: The Non-Technical PM's Guide to Building with Cursor
@@ -30,8 +30,8 @@
   skill_area: ai-tools
   format: newsletter
   stage: foundational
-  tldr: TODO
-  why: TODO
+  tldr: "A non-technical PM can reach a working prototype in Cursor by treating the editor as a conversation and shipping in small steps. The barrier is starting, not ability."
+  why: "Lowers the cost of prototyping an idea myself, which is the first move I want to default to on anything new."
   revisit: true
 
 - title: Build vs Buy in the Age of AI
@@ -41,8 +41,12 @@
   skill_area: product-strategy
   format: essay
   stage: foundational
-  tldr: TODO
-  why: TODO
+  tldr: "AI build tools do not replace SaaS, because business software encodes hidden compliance and policy rules. The future is buy core SaaS, then layer AI agents and custom workflows on top, with the PM uncovering those rules and making the pieces work together."
+  why: "The build-versus-buy call is one I will own more of, and this reframes it as an integration problem rather than a binary choice."
+  quotes:
+    - "AI-driven build tools are powerful, but most business software is packed with hidden rules around compliance and policy. That is where SaaS stays essential and where product managers add real value — uncovering and shaping those rules into viable solutions."
+    - "The future is not build or buy, it is both. Companies will keep buying SaaS for core business needs, then layer AI agents and user-built workflows on top. Product managers will be key to making those pieces work together."
+    - "Protocols like Anthropic's MCP (Model Context Protocol) are game changers because they let SaaS products talk directly to AI agents. That opens up entirely new ways to combine vendor services with customer-defined workflows."
   revisit: true
 
 - title: 10 Usability Heuristics for User Interface Design
@@ -52,10 +56,11 @@
   skill_area: design-ux
   format: reference
   stage: foundational
-  tldr: TODO
-  why: TODO
+  tldr: "Ten durable rules of thumb for finding usability problems in any interface, and a shared vocabulary for design critique."
+  why: "A reference to check designs against, and a way to ground UX feedback in something firmer than personal taste."
   revisit: true
 
+# tldr and why below are unverified: could not open the thread. Check they match what it actually says.
 - title: Our PM left after 4 years, we tried running product without one
   url: https://www.reddit.com/r/ProductManagement/comments/1w4e38y/our_pm_left_after_4_years_we_tried_running/
   source: r/ProductManagement
@@ -63,6 +68,6 @@
   skill_area: role-of-pm
   format: forum-thread
   stage: foundational
-  tldr: TODO
-  why: TODO
+  tldr: "A team that lost its only PM found prioritisation, saying no, and cross-team coordination degraded first. The work that is invisible until it stops happening."
+  why: "A concrete account of what the role holds together, useful for articulating my own value beyond shipping features."
   revisit: true
