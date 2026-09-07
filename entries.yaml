@@ -41,8 +41,12 @@
   skill_area: product-strategy
   format: essay
   stage: foundational
-  tldr: "AI lowers the cost of building, so revisit build-versus-buy calls, but keep deciding on whether the capability is core to your value rather than on how easy it has become to build."
-  why: "A framework for a strategic call PMs increasingly own, and it holds the line against assuming that cheaper building means build everything."
+  tldr: "AI build tools do not replace SaaS, because business software encodes hidden compliance and policy rules. The future is buy core SaaS, then layer AI agents and custom workflows on top, with the PM uncovering those rules and making the pieces work together."
+  why: "The build-versus-buy call is one I will own more of, and this reframes it as an integration problem rather than a binary choice."
+  quotes:
+    - "AI-driven build tools are powerful, but most business software is packed with hidden rules around compliance and policy. That is where SaaS stays essential and where product managers add real value — uncovering and shaping those rules into viable solutions."
+    - "The future is not build or buy, it is both. Companies will keep buying SaaS for core business needs, then layer AI agents and user-built workflows on top. Product managers will be key to making those pieces work together."
+    - "Protocols like Anthropic's MCP (Model Context Protocol) are game changers because they let SaaS products talk directly to AI agents. That opens up entirely new ways to combine vendor services with customer-defined workflows."
   revisit: true
 
 - title: 10 Usability Heuristics for User Interface Design
