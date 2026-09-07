@@ -68,6 +68,7 @@ Each entry in `entries.yaml`:
 | `stage` | foundational, mid-build, reference |
 | `tldr` | one line, the lesson I took and can apply |
 | `why` | why it pulled me in, the context I was in when I found it |
+| `quotes` | optional, a few verbatim lines I chose to keep. Not a summary |
 | `revisit` | true / false |
 | `reused` | optional, a `YYYY-MM` note each time I re-read and act on it |
 
