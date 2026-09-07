@@ -1,6 +1,10 @@
-# resonance-calendar - one-pager
+# resonance-log - one-pager
 
-Size: S. One weekend for v1, no users but me at first.
+Size: S. 1 to 2 days for v1, no users but me at first.
+
+## What this is
+
+A personal record, not a service. The value holds whether or not anyone else uses it: I get a revisit tool and a map of my own learning, and anyone reading gets a categorised reading list from someone whose taste they can judge, plus a repo they can fork. A version other people subscribe to, most likely an email digest, is a possible v2 and is out of scope here.
 
 ## Outcome
 
@@ -20,10 +24,10 @@ Building a categorised, dated log with a scheduled resurfacing feed will increas
 ## Features
 
 - A structured entry per resource: title, URL, source, date found, skill-area / format / stage tags, TL;DR learning, why it resonated, revisit flag.
-- A categorised index rendered from the entries, grouped by skill area.
-- An `.ics` feed that resurfaces one entry on a cadence, subscribable in any calendar.
+- An index rendered from the entries into the README, so the repo landing page shows what I have been reading. Two views: grouped by skill area, and grouped by month so the cadence is visible.
+- An `.ics` feed that resurfaces one entry on a cadence. For my own calendar, a nudge to re-read, not a channel other people subscribe to.
 - A capture rule in the README: anything that resonates goes in, no exception.
-- Credit to Ali Abdaal for the concept, with a short direct quote and a link.
+- Credit to Ali Abdaal for the concept, name hyperlinked, with a short direct quote and the source link.
 
 ## Metrics
 
@@ -31,11 +35,12 @@ Number of logged entries I re-read and act on per month, recorded as a dated not
 
 ## Non-goals (cut to keep v1 small)
 
+- Not a subscription or notification service. No one signs up to get my entries. The email-digest version is a possible v2, deliberately out of scope now.
 - No Streamlit or interactive front end. The README index is the interface.
-- No Google Calendar API sync. A committed `.ics` file people subscribe to does the same job without auth.
+- No Google Calendar API sync. A committed `.ics` file I subscribe to myself does the job without auth.
 - No automated import from bookmarks or Pocket. Adding entries by hand is part of the filter.
 - No full note or summary per resource. The TL;DR line is the point. Longer notes live elsewhere.
-- No public submissions or multi-user support.
+- No public submissions or multi-user support. Others fork the repo if they want their own.
 
 ## Scope
 
