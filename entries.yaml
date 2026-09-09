@@ -9,7 +9,7 @@
   format: essay
   stage: mid-build
   tldr: "A non-engineer can build working tools for discovery work with a coding agent by describing the workflow step by step. The skill is decomposing the task, not writing the code."
-  why: "A concrete model for building my own PM tooling rather than waiting on engineering, which is the builder-PM direction I am working towards."
+  why: "I want to build small tools for my own work instead of specifying them and handing them off. This is a concrete example of how."
   revisit: true
 
 - title: A Practical Guide to AI Evals
@@ -42,7 +42,7 @@
   format: essay
   stage: foundational
   tldr: "AI build tools do not replace SaaS, because business software encodes hidden compliance and policy rules. The future is buy core SaaS, then layer AI agents and custom workflows on top, with the PM uncovering those rules and making the pieces work together."
-  why: "The build-versus-buy call is one I will own more of, and this reframes it as an integration problem rather than a binary choice."
+  why: "It reframes build versus buy as an integration problem rather than a binary choice, which is a more useful way to think about it."
   quotes:
     - "AI-driven build tools are powerful, but most business software is packed with hidden rules around compliance and policy. That is where SaaS stays essential and where product managers add real value — uncovering and shaping those rules into viable solutions."
     - "The future is not build or buy, it is both. Companies will keep buying SaaS for core business needs, then layer AI agents and user-built workflows on top. Product managers will be key to making those pieces work together."
@@ -69,5 +69,5 @@
   format: forum-thread
   stage: foundational
   tldr: "A team that lost its only PM found prioritisation, saying no, and cross-team coordination degraded first. The work that is invisible until it stops happening."
-  why: "A concrete account of what the role holds together, useful for articulating my own value beyond shipping features."
+  why: "A concrete account of what a PM actually holds together day to day, the parts that are easy to overlook."
   revisit: true
