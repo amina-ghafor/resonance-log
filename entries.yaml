@@ -20,7 +20,7 @@
   format: essay
   stage: foundational
   tldr: "Judge an LLM feature's quality with a written eval set and a measured pass rate, not by feel, and iterate the prompt against that benchmark."
-  why: "Evals are the clearest AI-lifecycle skill for the roles I want, and very few PMs can show the practice."
+  why: "I am learning how to tell whether an LLM feature is actually any good. This is the most concrete method I have found."
   revisit: true
 
 - title: The Non-Technical PM's Guide to Building with Cursor
