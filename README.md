@@ -14,15 +14,13 @@ What I have changed: this is a git repo rather than Notion, entries are categori
 
 ## The index
 
-<!-- INDEX:START -->
-Generated from `entries.yaml` by the renderer. Grouped by skill area, with a second view by month so the reading cadence is visible at a glance. Not built yet.
-<!-- INDEX:END -->
+The full reading list, grouped by skill area and by month, is in [`INDEX.md`](INDEX.md). It is generated from `entries.yaml` by `render_index.py`.
 
 ## Structure
 
 - `entries.yaml`: one entry per resource. Schema in `docs/one-pager.md`.
 - `docs/one-pager.md`: what this is for, the scope, and how I will know it worked.
-- The renderer writes the index into this README between the markers above, so the repo landing page shows what I have been reading. Not built yet.
+- `render_index.py`: reads `entries.yaml` and writes the grouped list into `INDEX.md` between the `INDEX:START` / `INDEX:END` markers. In progress.
 - An `.ics` generator. Not built yet.
 
 ## Status
