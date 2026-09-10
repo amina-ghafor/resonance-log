@@ -16,15 +16,28 @@ INDEX_FILE = Path("INDEX.md")
 START_MARKER = "<!-- INDEX:START -->"
 END_MARKER = "<!-- INDEX:END -->"
 
+# Fields every entry must have for the renderer to work.
+REQUIRED_FIELDS = ("title", "url", "source", "date_found", "skill_area", "tldr")
+
 
 def load_entries(path=ENTRIES_FILE):
-    """Parse the YAML file into a list of entry dicts.
+    """Parse the YAML file into a list of entry dicts and check each one has the
+    fields the renderer needs.
 
-    Each dict has at least: title, url, source, date_found, skill_area, format,
-    stage, tldr, why. Some also have `quotes` (list) and `revisit` (bool).
+    A dict may also carry: format, stage, why, quotes (list), revisit (bool).
     """
     with open(path) as f:
-        return yaml.safe_load(f)
+        entries = yaml.safe_load(f)
+
+    for position, entry in enumerate(entries, start=1):
+        missing = [field for field in REQUIRED_FIELDS if field not in entry]
+        if missing:
+            name = entry.get("title", "untitled")
+            raise ValueError(
+                f"entry {position} ({name}) is missing: {', '.join(missing)}"
+            )
+
+    return entries
 
 
 def group_by(entries, key):
@@ -44,12 +57,15 @@ def entry_line(entry):
     return f"- [{entry['title']}]({entry['url']}). *{entry['source']}.* {entry['tldr']}"
 
 
-def render_section(heading, groups):
+def render_section(heading, groups, newest_first=False):
     """Render one view: a `##` heading, then a `###` sub-heading per group key
-    (sorted, so runs are stable) with that group's entries listed under it.
+    with that group's entries listed under it.
+
+    Keys are sorted so runs are stable. `newest_first` reverses that order, for
+    the by-month view where the latest month should come first.
     """
     lines = [f"## {heading}", ""]
-    for key in sorted(groups):
+    for key in sorted(groups, reverse=newest_first):
         lines.append(f"### {key}")
         lines.append("")
         for entry in groups[key]:
@@ -67,10 +83,12 @@ def render_index(entries):
     by_skill = group_by(entries, lambda e: e["skill_area"])
     skill_view = render_section("By skill area", by_skill)
 
-    # PyYAML parses `date_found: 2026-09-05` as a date object, so format it back
-    # to a "YYYY-MM" string rather than slicing.
-    by_month = group_by(entries, lambda e: e["date_found"].strftime("%Y-%m"))
-    month_view = render_section("By month", by_month)
+    # Sort entries newest-first before grouping, so within each month the latest
+    # entry comes first. PyYAML parses `date_found: 2026-09-05` as a date object,
+    # so format it back to a "YYYY-MM" string rather than slicing.
+    newest_first = sorted(entries, key=lambda e: e["date_found"], reverse=True)
+    by_month = group_by(newest_first, lambda e: e["date_found"].strftime("%Y-%m"))
+    month_view = render_section("By month", by_month, newest_first=True)
 
     return skill_view + "\n\n" + month_view
 
