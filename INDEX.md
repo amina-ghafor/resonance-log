@@ -9,6 +9,10 @@ Generated from `entries.yaml` by `render_index.py`. Do not edit the block below 
 
 - [A Practical Guide to AI Evals](https://www.producttalk.org/ai-evals/). *Product Talk (Teresa Torres).* Judge an LLM feature's quality with a written eval set and a measured pass rate, not by feel, and iterate the prompt against that benchmark.
 
+### ai-governance
+
+- [Law, Liberty and Leviathan: AI and the Future of Human Autonomy](https://foresight.org/resource/law-liberty-and-leviathan-ai-and-the-future-of-human-autonomy/). *Anders Sandberg.* Laws, markets and queues are tools for coordinating people, and they run on individual choices: prices, votes, complaints. If AI can coordinate without those signals, human autonomy becomes optional, even when the AI does exactly what we ask of it. Where to keep choice depends on the cost of a bad one: small for a breakfast, very large at global scale.
+
 ### ai-tools
 
 - [How to Build AI Workflows with Claude Code](https://www.producttalk.org/how-to-build-ai-workflows-with-claude-code/). *Product Talk (Teresa Torres).* A non-engineer can build working tools for discovery work with a coding agent by describing the workflow step by step. The skill is decomposing the task, not writing the code.
@@ -30,6 +34,7 @@ Generated from `entries.yaml` by `render_index.py`. Do not edit the block below 
 
 ### 2026-09
 
+- [Law, Liberty and Leviathan: AI and the Future of Human Autonomy](https://foresight.org/resource/law-liberty-and-leviathan-ai-and-the-future-of-human-autonomy/). *Anders Sandberg.* Laws, markets and queues are tools for coordinating people, and they run on individual choices: prices, votes, complaints. If AI can coordinate without those signals, human autonomy becomes optional, even when the AI does exactly what we ask of it. Where to keep choice depends on the cost of a bad one: small for a breakfast, very large at global scale.
 - [How to Build AI Workflows with Claude Code](https://www.producttalk.org/how-to-build-ai-workflows-with-claude-code/). *Product Talk (Teresa Torres).* A non-engineer can build working tools for discovery work with a coding agent by describing the workflow step by step. The skill is decomposing the task, not writing the code.
 - [A Practical Guide to AI Evals](https://www.producttalk.org/ai-evals/). *Product Talk (Teresa Torres).* Judge an LLM feature's quality with a written eval set and a measured pass rate, not by feel, and iterate the prompt against that benchmark.
 - [The Non-Technical PM's Guide to Building with Cursor](https://www.lennysnewsletter.com/p/the-non-technical-pms-guide-to-building-with-cursor). *Lenny's Newsletter.* A non-technical PM can reach a working prototype in Cursor by treating the editor as a conversation and shipping in small steps. The barrier is starting, not ability.

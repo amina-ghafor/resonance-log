@@ -70,3 +70,16 @@
   tldr: "A startup spread its PM's work across four people for four months. Gathering feedback and spotting broken user journeys got better by being distributed, since the whole team saw the problems. Prioritisation collapsed: several people with good judgement produce several good lists, not one ranked one."
   why: "A clear read on which parts of the PM role distribute well and which do not. 'Many good lists is not one ordered list' is a crisp way to name the part that does not."
   revisit: true
+
+- title: "Law, Liberty and Leviathan: AI and the Future of Human Autonomy"
+  url: https://foresight.org/resource/law-liberty-and-leviathan-ai-and-the-future-of-human-autonomy/
+  source: Anders Sandberg
+  date_found: 2026-09-26
+  skill_area: ai-governance
+  format: talk
+  stage: foundational
+  tldr: "Laws, markets and queues are tools for coordinating people, and they run on individual choices: prices, votes, complaints. If AI can coordinate without those signals, human autonomy becomes optional, even when the AI does exactly what we ask of it. Where to keep choice depends on the cost of a bad one: small for a breakfast, very large at global scale."
+  why: "I heard Sandberg give this talk in Oxford. The link is a recording of an earlier version. I work on AI features, and it left me with a question to ask of each one: which decisions should stay with the person using it."
+  quotes:
+    - "As AI replaces biological intelligence, individual human autonomy may become unnecessary for producing material welfare, shifting from essential to merely optional."
+  revisit: true
