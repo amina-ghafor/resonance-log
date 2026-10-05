@@ -19,6 +19,7 @@ The full reading list, grouped by skill area and by month, is in [`INDEX.md`](IN
 ## Structure
 
 - `entries.yaml`: one entry per resource. Schema in `docs/one-pager.md`.
+- `templates/`: blank templates taken from entries, ready to copy. So far: an opportunity solution tree.
 - `docs/one-pager.md`: what this is for, the scope, and how I will know it worked.
 - `render_index.py`: reads `entries.yaml` and writes the grouped list into `INDEX.md` between the `INDEX:START` / `INDEX:END` markers. In progress.
 - An `.ics` generator. Not built yet.
