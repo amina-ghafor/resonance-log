@@ -22,6 +22,10 @@ Generated from `entries.yaml` by `render_index.py`. Do not edit the block below 
 
 - [10 Usability Heuristics for User Interface Design](https://www.nngroup.com/articles/ten-usability-heuristics/). *Nielsen Norman Group.* Ten durable rules of thumb for finding usability problems in any interface, and a shared vocabulary for design critique.
 
+### discovery
+
+- [Opportunity Solution Trees: Visualize Your Discovery to Stay Aligned and Drive Outcomes](https://www.producttalk.org/opportunity-solution-trees/). *Product Talk (Teresa Torres).* Stop, pause, question. Don't jump to the solution: validate the credibility of the problem first.
+
 ### product-strategy
 
 - [Build vs Buy in the Age of AI](https://www.svpg.com/article-build-vs-buy-in-the-age-of-ai/). *Silicon Valley Product Group (SVPG).* AI build tools do not replace SaaS, because business software encodes hidden compliance and policy rules. The future is buy core SaaS, then layer AI agents and custom workflows on top, with the PM uncovering those rules and making the pieces work together.
@@ -31,6 +35,10 @@ Generated from `entries.yaml` by `render_index.py`. Do not edit the block below 
 - [Our PM left after 4 years. We tried running without one for 4 months.](https://www.reddit.com/r/ProductManagement/comments/1w4e38y/our_pm_left_after_4_years_we_tried_running/). *r/ProductManagement.* A startup spread its PM's work across four people for four months. Gathering feedback and spotting broken user journeys got better by being distributed, since the whole team saw the problems. Prioritisation collapsed: several people with good judgement produce several good lists, not one ranked one.
 
 ## By month
+
+### 2026-10
+
+- [Opportunity Solution Trees: Visualize Your Discovery to Stay Aligned and Drive Outcomes](https://www.producttalk.org/opportunity-solution-trees/). *Product Talk (Teresa Torres).* Stop, pause, question. Don't jump to the solution: validate the credibility of the problem first.
 
 ### 2026-09
 
