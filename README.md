@@ -21,9 +21,19 @@ The full reading list, grouped by skill area and by month, is in [`INDEX.md`](IN
 - `entries.yaml`: one entry per resource. Schema in `docs/one-pager.md`.
 - `templates/`: blank templates taken from entries, ready to copy. So far: an opportunity solution tree.
 - `docs/one-pager.md`: what this is for, the scope, and how I will know it worked.
-- `render_index.py`: reads `entries.yaml` and writes the grouped list into `INDEX.md` between the `INDEX:START` / `INDEX:END` markers. In progress.
-- An `.ics` generator. Not built yet.
+- `render_index.py`: reads `entries.yaml` and writes the grouped list into `INDEX.md` between the `INDEX:START` / `INDEX:END` markers.
+- `render_ics.py`: reads `entries.yaml` and writes `resonance.ics`, one all-day event a week for each entry marked `revisit: true`.
+
+## Subscribe to the feed
+
+In your calendar app, add a calendar by URL and paste:
+
+```
+https://raw.githubusercontent.com/amina-ghafor/resonance-log/main/resonance.ics
+```
+
+In Google Calendar that is Other calendars, then From URL. In Apple Calendar it is File, then New Calendar Subscription. Each week one entry comes back with its lesson and link.
 
 ## Status
 
-v1 in progress. The entries file and this README exist. The index renderer and the `.ics` generator are still to write.
+v1 done: the entries file, the rendered index and the `.ics` feed. After adding an entry, run `python render_index.py` and `python render_ics.py`.
