@@ -10,7 +10,7 @@ Anything that resonates goes in. No exception. In Abdaal's words:
 
 Source: [Using Notion as a Resonance Calendar](https://aliabdaal.com/newsletter/using-notion-as-a-resonance-calendar/)
 
-What I have changed: this is a git repo rather than Notion, entries are categorised by skill area, format and learning stage, and each carries a one-line lesson kept separate from the reason it resonated. An `.ics` feed resurfaces one entry on a cadence, so I actually go back to them.
+What I have changed: this is a git repo rather than Notion, entries are categorised by skill area, format and learning stage, and each carries a one-line lesson kept separate from the reason it resonated. A calendar file resurfaces one entry on a cadence, so I actually go back to them.
 
 ## The index
 
@@ -22,18 +22,12 @@ The full reading list, grouped by skill area and by month, is in [`INDEX.md`](IN
 - `templates/`: blank templates taken from entries, ready to copy. So far: an opportunity solution tree.
 - `docs/one-pager.md`: what this is for, the scope, and how I will know it worked.
 - `render_index.py`: reads `entries.yaml` and writes the grouped list into `INDEX.md` between the `INDEX:START` / `INDEX:END` markers.
-- `render_ics.py`: reads `entries.yaml` and writes `resonance.ics`, one all-day event a week for each entry marked `revisit: true`.
+- `render_ics.py`: reads `entries.yaml` and writes `resonance.ics` locally, one all-day event a week for each entry marked `revisit: true`.
 
-## Subscribe to the feed
+## Using the calendar file
 
-In your calendar app, add a calendar by URL and paste:
-
-```
-https://raw.githubusercontent.com/amina-ghafor/resonance-log/main/resonance.ics
-```
-
-In Google Calendar that is Other calendars, then From URL. In Apple Calendar it is File, then New Calendar Subscription. Each week one entry comes back with its lesson and link.
+Run `python render_ics.py` to make `resonance.ics` on your own machine, then import it into your calendar app. Each week one entry comes back with its lesson and link. The file is not committed, so there is no public feed.
 
 ## Status
 
-v1 done: the entries file, the rendered index and the `.ics` feed. After adding an entry, run `python render_index.py` and `python render_ics.py`.
+v1 done: the entries file, the rendered index and the calendar file generator. After adding an entry, run `python render_index.py` and `python render_ics.py`.
