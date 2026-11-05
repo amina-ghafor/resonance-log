@@ -19,13 +19,13 @@ A working record of the writing that has actually changed how I work as a PM, ke
 
 ## Hypothesis
 
-Building a categorised, dated log with a scheduled resurfacing feed will increase how often I re-read and apply the resources that mattered, rather than saving and forgetting them.
+Building a categorised, dated log with a scheduled resurfacing calendar will increase how often I re-read and apply the resources that mattered, rather than saving and forgetting them.
 
 ## Features
 
 - A structured entry per resource: title, URL, source, date found, skill-area / format / stage tags, TL;DR learning, why it resonated, revisit flag.
 - An index rendered from the entries into the README, so the repo landing page shows what I have been reading. Two views: grouped by skill area, and grouped by month so the cadence is visible.
-- An `.ics` feed that resurfaces one entry on a cadence. For my own calendar, a nudge to re-read, not a channel other people subscribe to.
+- An `.ics` file that resurfaces one entry on a cadence. Made locally and imported into my own calendar, a nudge to re-read. Not published as a feed.
 - A capture rule in the README: anything that resonates goes in, no exception.
 - Credit to Ali Abdaal for the concept, name hyperlinked, with a short direct quote and the source link.
 
@@ -37,7 +37,7 @@ Number of logged entries I re-read and act on per month, recorded as a dated not
 
 - Not a subscription or notification service. No one signs up to get my entries. The email-digest version is a possible v2, deliberately out of scope now.
 - No Streamlit or interactive front end. The README index is the interface.
-- No Google Calendar API sync. A committed `.ics` file I subscribe to myself does the job without auth.
+- No Google Calendar API sync. A local `.ics` file I import myself does the job without auth.
 - No automated import from bookmarks or Pocket. Adding entries by hand is part of the filter.
 - No full note or summary per resource. The TL;DR line is the point. Longer notes live elsewhere.
 - No public submissions or multi-user support. Others fork the repo if they want their own.
@@ -51,7 +51,7 @@ Number of logged entries I re-read and act on per month, recorded as a dated not
 ## Measure and limit
 
 - **Single outcome metric:** entries re-read and acted on per month, counted from the `reused:` notes.
-- **v1 boundary:** done means the entries file with the current resources, a rendered index committed, a working `.ics` anyone can subscribe to, and the README with capture rule and Abdaal credit. Deferred: the Friday review automation and any front end beyond the index.
+- **v1 boundary:** done means the entries file with the current resources, a rendered index committed, a working `.ics` generator for my own calendar, and the README with capture rule and Abdaal credit. Deferred: the Friday review automation and any front end beyond the index.
 
 ## Entry schema
 
